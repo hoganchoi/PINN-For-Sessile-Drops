@@ -14,7 +14,7 @@ def pde_loss(xy_tensor, z, mask_domain, sin_alpha, laplace_pressure,
         z (Tensor): Tensor containing z-profiles at each (x, y) coordinate.
         mask_domain (Tensor): The mask distinguishing the center area of the droplet.
         sin_alpha (float): The tilt angle of the surface.
-        laplace_pressure (Variable): The trainable parameter representing delta Laplacian pressure.
+        laplace_pressure (Variable): The trainable parameter representing delta Laplacian pressure normalized by surface tension.
         Bo (float): The Bond number of the liquid.
         len_scale (float): The length scale in relation to the total volume of the drop.
         grad_list (List): A list containing all the necessary gradients of the z-profile.
