@@ -9,7 +9,6 @@ import PINN_Drop.utils as utils
 
 import numpy as np
 
-## Finds the Mean Absolute Error between the predicted angle and the true angle.
 def angle_eval(z_pred, grad_mag, gt_angle):
     '''
     Finds the Mean Absolute Error between the predicted angle and the true angle.
