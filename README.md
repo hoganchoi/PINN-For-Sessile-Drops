@@ -33,9 +33,9 @@ We also provided saved model weights to our ``saved_models`` folder. We organize
  - ``PINN_hysteresis_model_Bo_2_9.keras``: The weights of the neural network for the hysteresis droplet (Fig 6).
  - ``PINN_hysteresis_state_Bo_2_9.npz``: The weights of the trainable normalized Laplace variable for the hysteresis droplet.
  - ``PINN_model_Bo_2_9.keras``: The weights of the neural network of droplet of Bond number 2.9 formed on flat surface. The starting seed for hysteresis training.
- - ``PINN_state_Bo_2_9.npz``: The weights of the trainable variable for flat droplet with Bond number 2.9.
+ - ``PINN_state_Bo_2_9.npz``: The weights of the trainable variable for a droplet formed on flat surface with Bond number 2.9.
 
-The notebooks trains the droplet formations from scratch. However, to load in pre-trained weights, please do the following.
+The notebooks, by default, trains the droplet formations from scratch. However, to load in pre-trained weights, please do the following.
 ```python
 model.load_weights(model_weights = "Destination to neural network weights. Is a .keras and denoted as 'model'.",
                    laplace_weights = "Destination to trainable normalized Laplacian weights. Is a .npz and denoted as 'state'.")
