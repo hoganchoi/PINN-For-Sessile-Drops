@@ -28,8 +28,8 @@ We uploaded three Python notebooks to our ``demo`` folder. Each notebook goes ov
  - ``pinn_demo_3.ipynb``: Hysteresis training session and produces Fig 6.
    
 We also provided saved model weights to our ``saved_models`` folder. We organized the folder as shown below.
- - ``benchmark``:
- - ``nine_cases``:
+ - ``benchmark``: Contains the neural network and trainable variable weights of the benchmark cases outlined in Fig 4.
+ - ``nine_cases``: Contains the neural network and trainable variable weights of the starting seed for the nine hysteresis cases in Fig 6.
  - ``PINN_hysteresis_model_Bo_2_9.keras``: The weights of the neural network for the hysteresis droplet (Fig 6).
  - ``PINN_hysteresis_state_Bo_2_9.npz``: The weights of the trainable normalized Laplace variable for the hysteresis droplet.
  - ``PINN_model_Bo_2_9.keras``: The weights of the neural network of droplet of Bond number 2.9 formed on flat surface. The starting seed for hysteresis training.
