@@ -40,3 +40,9 @@ The notebooks trains the droplet formations from scratch. However, to load in pr
 model.load_weights(model_weights = "Destination to neural network weights. Is a .keras and denoted as 'model'.",
                    laplace_weights = "Destination to trainable normalized Laplacian weights. Is a .npz and denoted as 'state'.")
 ```
+If you want to save trained model weights, please do the following.
+```python
+model.save_weights(model_path = "Save path for neural network weights.",
+                   laplace_path = "Save path for normalized Laplacian weights.")
+```
+For more information, please check the ``pinn_model.py`` module in the ``PINN_Drop`` folder.
