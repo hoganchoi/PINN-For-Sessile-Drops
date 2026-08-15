@@ -20,3 +20,17 @@ Please activate the Conda environment and download all the required packages fro
 ```markdown
 pip install -r requirements.txt
 ```
+
+## Model Weights and Python Notebooks
+We uploaded three Python notebooks to our ``demo`` folder. Each notebook goes over the workflow we did to obtain the figures from our paper. The following are:
+ - ``pinn_demo_1.ipynb``: Standard training session and produces Fig 2.
+ - ``pinn_demo_2.ipynb``: Training session for multiple contact angles and produces Fig 1.
+ - ``pinn_demo_3.ipynb``: Hysteresis training session and produces Fig 6.
+   
+We also provided saved model weights to our ``saved_models`` folder. We organized the folder as shown below.
+ - ``benchmark``:
+ - ``nine_cases``:
+ - ``PINN_hysteresis_model_Bo_2_9.keras``: The weights of the neural network for the hysteresis droplet (Fig 6).
+ - ``PINN_hysteresis_state_Bo_2_9.npz``: The weights of the trainable normalized Laplace variable for the hysteresis droplet.
+ - ``PINN_model_Bo_2_9.keras``: The weights of the neural network of droplet of Bond number 2.9 formed on flat surface. The starting seed for hysteresis training.
+ - ``PINN_state_Bo_2_9.npz``: The weights of the trainable variable for flat droplet with Bond number 2.9.
